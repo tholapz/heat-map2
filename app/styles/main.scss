@@ -1,0 +1,94 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+path {
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+ 
+.background {
+  fill: none;
+  stroke: #ddd;
+}
+ 
+.foreground {
+  fill: none;
+  pointer-events: all;
+}
+ 
+.logo {
+    background: url(logo.png);
+    width: 100%;
+    height: 44px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px;
+}
+
+.team-list {
+    margin: auto;
+    width: 440px;
+}
+
+.team {
+    display: inline-block;
+    width: 140px;
+    height: 60px;
+    border: 1px solid cyan;
+}
+
+.ugly-body {
+    width: 744px; /* extra four for the borders on children */
+    border: 1px solid blue;
+    float: left;
+}
+
+.ugly-left {
+    float: left;
+    width: 500px;
+    border: 1px solid red;
+    overflow: hidden;
+}
+
+.ugly-right {
+    float: left;
+    width: 240px;
+    border: 1px solid green;
+}
+
+.instruction-primary {
+    text-align: center;
+    font-size: 1em;
+    margin: 0.2em;
+}
+.instruction-secondary {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0.2em;
+}
+
+.team-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px;
+    border-bottom: solid 4px green;
+}
+
+.team-number {
+    font-size: 3em;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.team[data-team-id='1'] .team-name {
+  border-color: #2ca02c;
+}
+.team[data-team-id='2'] .team-name {
+  border-color: #bcbd22;
+}
+.team[data-team-id='3'] .team-name {
+  border-color: #1f77b4;
+}
