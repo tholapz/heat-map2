@@ -22,15 +22,11 @@ CostaCalypso.Views = CostaCalypso.Views || {};
         },
 
         render: function () {
-            debugger;
             var text = this.model.get("text");
-
             if(!(_.isObject(text) && _.size(text) > 0)){
                 return;
             }
 
-
-            
             this.$el.html(this.template(text));
         }
 

@@ -27,8 +27,6 @@ $(document).ready(function () {
     cms_model.requestData();
 
     //create header
-
     var header_view = new CostaCalypso.Views.HeaderView({el: $("#header"), model: cms_model});
-
 
 });
